@@ -1,8 +1,0 @@
-LICENSE
-README.md
-setup.py
-LintAid.egg-info/PKG-INFO
-LintAid.egg-info/SOURCES.txt
-LintAid.egg-info/dependency_links.txt
-LintAid.egg-info/entry_points.txt
-LintAid.egg-info/top_level.txt
