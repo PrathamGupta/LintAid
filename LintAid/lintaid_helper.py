@@ -2,9 +2,11 @@ import inquirer
 
 def check_linter():
     '''
-    
+    Author: Pratham Gupta
+
+    Description: This function asks the user if they are using a linter in the repository already or not.
     '''
-    
+
     check_linter = inquirer.prompt([
         inquirer.Confirm('Linter', message="Do you have a Linter present in your reporsitory?", default=True),
     ])
@@ -12,7 +14,9 @@ def check_linter():
 
 def ask_linter():
     '''
-    
+    Author: Pratham Gupta
+
+    Description:  This function asks the user what linter they are using in the repository if there is one present.
     '''
 
     ask_linter = inquirer.prompt([
@@ -25,7 +29,9 @@ def ask_linter():
 
 def ask_language():
     '''
-    
+    Author: Pratham Gupta
+
+    Description: This function asks the user what language linter they want to add to their project.
     '''
 
     ask_language = inquirer.prompt([
@@ -38,7 +44,9 @@ def ask_language():
 
 def recommended_linter(linter_recommended):
     '''
-    
+    Author: Pratham Gupta
+
+    Description: This function asks the user if they want to install the recommended linter to the project.
     '''
 
     linter_chosen = [False, '']
@@ -53,5 +61,14 @@ def recommended_linter(linter_recommended):
             break
     return linter_chosen
 
-def install_linter():
-    return 
+def ask_repository():
+    '''
+    Author: Pratham Gupta
+
+    Description: This function asks the user what repository they want the linter in.
+    '''
+
+    repository_name = inquirer.prompt([
+        inquirer.Text('Project', message="Give the path to your project"),
+    ])
+    return repository_name['Project']
